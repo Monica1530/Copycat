@@ -1,0 +1,318 @@
+@import url(//db.onlinewebfonts.com/c/7017698b5c5a2cc397cd3b0c0984d76f?family=U8);
+
+@font-face {
+    font-family: "U8";
+    src: url("//db.onlinewebfonts.com/t/7017698b5c5a2cc397cd3b0c0984d76f.eot");
+    src: url("//db.onlinewebfonts.com/t/7017698b5c5a2cc397cd3b0c0984d76f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7017698b5c5a2cc397cd3b0c0984d76f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7017698b5c5a2cc397cd3b0c0984d76f.woff") format("woff"), url("//db.onlinewebfonts.com/t/7017698b5c5a2cc397cd3b0c0984d76f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7017698b5c5a2cc397cd3b0c0984d76f.svg#U8") format("svg");
+
+}
+
+
+
+
+
+
+* {
+    cursor: -webkit-image-set(url(./image/cursor1x.png) 1x,
+            url(./image/cursor1x.png) 2x) 14 14, auto !important;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "U8";
+    margin: 0;
+}
+
+
+#accueil {
+    display: flex;
+    /* flex-direction: row;
+    height: auto; */
+
+}
+
+#accueil div {
+    display: flex;
+    /* faire un justify-content : start pour amener les elements a droite et un padding left de 10 ou 20px */
+    justify-content: start;
+    padding-left: 10px;
+    width: 100%;
+    padding-inline-end: 15px;
+}
+
+.right,
+.left {
+    border: 5px solid black;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    /* padding-right: 10px; */
+    margin: 40px;
+    font-size: larger;
+
+}
+
+.text:hover>span {
+    text-decoration: underline;
+    text-decoration-color: #c3a5f5;
+    text-decoration-thickness: 3px;
+
+}
+
+.text span {
+    transition: all 0.3s;
+}
+
+.spot:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffe000;
+    text-decoration-thickness: 3px;
+}
+
+.contact:hover {
+    text-decoration: underline;
+    text-decoration-color: #3cc8aa;
+    text-decoration-thickness: 3px;
+
+}
+
+.tw:hover {
+    text-decoration: underline;
+    text-decoration-color: darkcyan;
+    text-decoration-thickness: 3px;
+}
+
+.fb:hover {
+    text-decoration: underline;
+    text-decoration-color: midnightblue;
+    text-decoration-thickness: 3px;
+}
+
+.elements>.ig:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 3px;
+    text-decoration-skip: 3px;
+
+}
+
+.elements>b {
+    text-decoration: none;
+}
+
+.elements span {
+    transition: all 0.3s;
+}
+
+#logo {
+
+    width: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#logo div {
+    height: 1px;
+    margin: 15px 15px 0;
+    padding: 5px;
+}
+
+#logo .line {
+    display: flex;
+}
+
+#logo div {
+    transition: all 0.3s;
+}
+
+.line1,
+.line2,
+.line3 {
+    display: block;
+    border: 2px solid black;
+    background-color: black;
+    width: 40px;
+
+}
+
+#logo:hover .line1 {
+
+    transform: translateY(30px);
+}
+
+.line1:hover {
+    /* transform: scale(0.5) translate(-100%, -100%); */
+}
+
+#logo:hover .line2 {
+    /* transform: scale(0) translate(-0%, -0%); */
+    transform: rotate(90deg);
+}
+
+.line2 {
+    transition: 0;
+}
+
+#logo:hover .line3 {
+    /* visibility: hidden; */
+    display: none;
+
+
+}
+
+.line3 {
+    /* transform: scale(2, 0.5); */
+}
+
+/* .line1,
+.line2 .line3 {
+    margin: 10%;
+    width: 3.5rem;
+    height: 0.5rem;
+    background-color: black;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+} */
+
+#logo .outline {
+    width: 80px;
+    height: 100px;
+}
+
+.outline {
+
+    /* flex-direction: column;
+    border: 3px solid black;
+    width: 20px; */
+    /* display: flex;
+    justify-content: space-around; */
+    height: 7rem;
+    width: 5rem;
+    border: 0.4rem solid black;
+    /* background-color: transparent; */
+    display: flex;
+    /* La propriété flex-direction définit la façon dont les éléments flexibles sont placés dans un conteneur flexible :
+     elle définit l'axe principal et la direction des éléments (normale ou inversée). */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#accueil>div span {
+    font-weight: bolder;
+}
+
+.elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+
+}
+
+.elements b {
+    padding: 7px;
+
+}
+
+.elements b {
+    text-decoration: none;
+}
+
+#nav {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#nav div {
+    font-size: 35px;
+    font-weight: bolder;
+    font-weight: 600;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 225px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.space:hover>p,
+.members:hover>p,
+.membership:hover>p,
+.contact:hover>p {
+    transform: scale(1.2);
+}
+
+#nav p {
+    transition: all 0.3s;
+
+}
+
+#nav>:nth-child(1) {
+    background-color: #c3a5f5;
+    border: solid 5px black;
+
+}
+
+#nav>:nth-child(2) {
+    background-color: #ffa9af;
+    border: solid 5px black;
+
+}
+
+#nav>:nth-child(3) {
+    background-color: #ffe000;
+    border: solid 5px black;
+}
+
+#nav>:nth-child(4) {
+    background-color: #3cc8aa;
+    border: solid 5px black;
+}
+
+@media screen and (max-width: 868px) {
+
+    #accueil,
+    #nav {
+
+        display: flex;
+        flex-direction: column;
+        background: coral;
+    }
+
+    .right {
+        order: 0;
+    }
+}
+
+/* pas de scroll */
+/* 
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+    #accueil,
+    #nav {
+        display: flex;
+        flex-direction: column;
+        background: coral;
+    }
+} */
